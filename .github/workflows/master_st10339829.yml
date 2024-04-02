@@ -25,8 +25,8 @@ jobs:
       - name: Restore NuGet packages
         run: nuget restore
 
-      - name: Publish to folder
-        run: msbuild /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="\published\"
+      - name: Publish 
+        run: dotnet publish CLDV6211_ST10339829_POE.csproj -c Release -o ./publish
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
