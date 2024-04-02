@@ -1,6 +1,6 @@
 ﻿namespace CLDV6211_ST10339829_POE.Models
 {
-    public class KhumaloCraft
+    public class KhumaloCraftModel
     {
         public int Id { get; set; }
         public string Name { get; set; }

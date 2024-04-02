@@ -1,0 +1,11 @@
+﻿@model IEnumerable<CLDV6211_ST10339829_POE.Models.KhumaloCraftModel>
+
+@foreach (var item in Model)
+{
+    <div>
+        <h2>@item.Name</h2>
+        <img src="@item.ImageUrl" alt="@item.Name" />
+        <p>@item.Description</p>
+        <p>Price: @item.Price</p>
+    </div>
+}
